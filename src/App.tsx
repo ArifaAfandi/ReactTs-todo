@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Form from './components/Form';
 import Todos from './components/Todos';
-import './styles/index.scss'
+import './app.scss'
 
 export type TodoType = {
   title: string;

@@ -1,5 +1,7 @@
 import React, { useRef, FormEvent } from 'react';
 import { TodoType } from '../App';
+import Button from 'react-bootstrap/Button';
+
 
 
 type FormProps = {
@@ -28,7 +30,7 @@ const Form: React.FC<FormProps> = ({ addTodo }) => {
     <form onSubmit={handleSubmit}>
       <label htmlFor="todo">Add todo</label>
       <input ref={inputRef} type="text" name="todo" id="todo" />
-      <button type="submit">Submit</button>
+      <Button type="submit" variant="primary">Submit</Button>
     </form>
   );
 };
